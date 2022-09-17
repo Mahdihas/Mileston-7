@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .main{
+      width: 90%!important;
+      margin: auto!important;
+    }
+  </style>
+    <title>Hello, world!</title>
+  </head>
+  <body class="container  pt-5">
+    <div class="  container p-5 bg-dark text-white">
+        <h1 class="text-center">Please contact me</h1>
+
+        <div class=" main  ">
+           <h5 class="text-info">Name</h5>
+           <input  id="name-field" class="py-1 px-2 w-50" type="text" placeholder="type Name">
+           <button onclick="displayDelete()" id="name-delete" class="btn rounded-pill btn-danger">Delete name</button>
+            <button onclick="DisplayName()"  id="name-send" class="btn rounded-pill btn-danger">Send name</button> 
+
+
+   <!-- email -->
+   <h5 class="text-info pt-3">Email</h5>
+           <input id="email-field" class="py-1 px-2 w-50" type="email" placeholder="type email">
+           <button onclick="displayEDelete()"  id="email-delete" class="btn rounded-pill btn-danger">Delete name</button>
+            <button onclick="displayEmail()" id="email-send" class="btn rounded-pill btn-danger">Send name</button> 
+
+            <!-- massage -->
+            <h5 class="text-info">Massage</h5>
+           <input id="massage-field" class="py-3 px-2 w-50" type="masaage" placeholder="write Massage">
+           <button onclick="deleteM()" id="massage-delete" class="btn rounded-pill btn-danger">Delete name</button>
+            <button onclick="displayM()" id="massage-send" class="btn rounded-pill btn-danger">Send name</button> 
+
+        </div>
+        <div class="d-flex  justify-content-center pt-4">
+            <button  id="send-all" class="btn btn-secondary px-4 mx-5 rounded-pill ">Send</button>
+            <button onclick="reset()" id="reset" class="btn btn-warning px-4 mx-5 rounded-pill">Reset</button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+  <script src="level3.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
